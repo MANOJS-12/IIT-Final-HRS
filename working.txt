@@ -1,0 +1,66 @@
+================================================================================
+MENTAL HEALTH COMPANION - SYSTEM ARCHITECTURE & LOGIC
+================================================================================
+
+1. SYSTEM OVERVIEW
+------------------
+This application is a Hybrid Recommender System tailored for mental health. 
+It uses a Knowledge Graph to understand relationships between Users, Mental States, 
+and Activities.
+
+TECH STACK:
+- Database: Neo4j (Graph Database)
+- Backend: FastAPI (Python) + Scikit-Learn (ML)
+- Frontend: React + Vite + Framer Motion
+- ML: Spectral Embedding (Graph Representation Learning)
+
+2. CORE LOGIC: THE HYBRID ENGINE
+--------------------------------
+The Recommendation Engine (`recommender/engine.py`) employs two parallel strategies 
+and merges them for the final result.
+
+A. RULE-BASED LOGIC (The "Expert System")
+   - Uses Cypher queries to traverse the graph explicitly.
+   - Logic: User -> HAS_STATE -> State -> TREATED_BY -> Activity.
+   - Example: If a user has "Stress", finding activities linked to "Stress" (e.g., Meditation).
+   - Pros: 100% Explainable, reliable for known patterns.
+
+B. NEURAL LOGIC (The "AI System")
+   - Uses Graph Embeddings (`ml/graph_embedding.py`) to represent every node as a logic vector.
+   - Training: We use Spectral Embedding to learn the structure of the graph. Nodes that are 
+     closely connected in the graph end up close in the vector space.
+   - Inference: We calculate Cosine Similarity between the User's vector and Activity vectors.
+   - Pros: Finds "hidden" connections. (e.g., Users who like "Yoga" also tend to need "Social Clubs").
+   - Visual: Displayed with a "Purple Sparkle" icon in the UI.
+
+3. SPECIAL FEATURES
+-------------------
+
+COLD START STRATEGY (Real-time Assessment)
+- Problem: An anonymous user filling out the form has no history and thus no pre-trained vector.
+- Solution: 'Proxy Profiling'.
+- Steps:
+  1. User maps to States (e.g., "Anxiety", "Low Mood").
+  2. We fetch the pre-trained vectors for these State nodes.
+  3. We calculate the AVERAGE of these State vectors to create a "Virtual User Vector".
+  4. We find activities mathematically similar to this Virtual Vector.
+
+4. DATA FLOW
+------------
+[Frontend React App] 
+       | (JSON Request: {user_id, attributes, strategy='hybrid'})
+       v
+[FastAPI Backend]
+       |
+   [Recommender Engine]
+       |---> [Strategy 1: Neo4j Cypher Query] ----> (Explicit Matches)
+       |
+       |---> [Strategy 2: ML Inference] 
+                   |---> Load 'data/graph_embeddings.pkl'
+                   |---> Calculate Cosine Similarity
+                   |---> (Implicit AI Matches)
+       |
+   [Result Merger] -> Interleaves results (Rule, AI, Rule, AI...) to ensure diversity.
+       |
+       v
+[Frontend Display] -> Renders cards + Visualizes Logic Graph
