@@ -1,4 +1,4 @@
-#Mental Health Companion & Recommender
+## Mental Health Companion & Recommender
 
 A **full-stack AI-powered mental health recommendation system** that provides **personalized, explainable, and cold-start–robust wellness activity recommendations**.  
 The system employs a **Hybrid Recommender Architecture** by integrating:
@@ -8,11 +8,8 @@ The system employs a **Hybrid Recommender Architecture** by integrating:
 
 This hybrid design ensures **trust, transparency, and adaptability**, which are essential for sensitive mental health applications.
 
-🔗 **Overall Project Link**: ([url](https://drive.google.com/drive/folders/1-TNLHTCTesctzfKGOWbpnyokQa4IhXzp?usp=sharing))
 
----
-
-##Problem Statement
+## Problem Statement
 
 Most existing digital mental health recommender systems suffer from key limitations:
 
@@ -27,9 +24,7 @@ Given the critical importance of **explainability, trust, and personalization** 
 2. Learns hidden relational patterns  
 3. Performs reliably under data-sparse and cold-start conditions  
 
----
-
-##Proposed Approach
+## Proposed Approach
 
 ### A. System Overview
 
@@ -45,7 +40,7 @@ The recommendation engine operates through two parallel inference paths:
 
 The outputs from both paths are **interleaved** to produce recommendations that are **accurate, diverse, and explainable**.
 
----
+
 
 ### B. Data Strategy
 
@@ -64,7 +59,7 @@ The outputs from both paths are **interleaved** to produce recommendations that 
   - Kaggle Mental Health Dataset  
   - https://www.kaggle.com/datasets/bhavikjikadara/mental-health-dataset
 
----
+
 
 ### C. AI / ML Design
 
@@ -77,7 +72,7 @@ The outputs from both paths are **interleaved** to produce recommendations that 
 
 This design balances **expert knowledge** and **learned intelligence**, ensuring robustness and interpretability.
 
----
+
 
 ### D. Tools and Technologies
 
@@ -88,9 +83,8 @@ This design balances **expert knowledge** and **learned intelligence**, ensuring
 - **Data Serialization**: Pickle (pre-trained embeddings)
 - **Visualization**: Graph-aware recommendation explanations at UI level
 
----
 
-##Results
+## Results
 
 For a given user assessment:
 
@@ -107,8 +101,6 @@ For a given user assessment:
    - Merges symbolic and neural outputs  
    - Produces recommendations that are both **explainable and personalized**
 
----
-
 ## Learning Outcomes
 
 1. Demonstrated effective modeling of mental health domain knowledge using graphs  
@@ -116,13 +108,11 @@ For a given user assessment:
 3. Applied graph representation learning beyond traditional collaborative filtering  
 4. Understood the importance of explainability and trust in sensitive AI systems 
 
-##Prerequisites
+## Prerequisites
 
 - **Docker Desktop** (for Neo4j Database)
 - **Python 3.10+** (Backend & ML)
 - **Node.js 16+** (Frontend)
-
----
 
 ##Setup Instructions
 
@@ -181,6 +171,7 @@ You can test the recommendation engine directly via the CLI:
 ```bash
 python debug_recommender.py
 ```
+
 
 
 
