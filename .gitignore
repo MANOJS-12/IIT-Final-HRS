@@ -1,55 +1,26 @@
-# =========================
-# Neo4j Database Files
-# =========================
-data/neo4j/
-neo4j/data/
-neo4j/logs/
-neo4j/import/
-neo4j/plugins/
+# Ignore everything by default
+*
 
-# Ignore Neo4j transaction logs & databases
-**/neostore.transaction.db.*
-**/neostore.*
-**/*.db
-**/*.log
+# Allow required folders
+!frontend/
+!evaluation/
+!api/
+!graph/
+!logs/
+!ml/
+!recommender/
 
-# =========================
-# Python
-# =========================
-__pycache__/
-*.pyc
-*.pyo
-*.pyd
-.env
-venv/
-.env/
+# Allow all files inside allowed folders
+!frontend/**
+!evaluation/**
+!api/**
+!graph/**
+!logs/**
+!ml/**
+!recommender/**
 
-# =========================
-# Node / MERN (if applicable)
-# =========================
-node_modules/
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
-
-# =========================
-# OS / Editor
-# =========================
-.DS_Store
-Thumbs.db
-.vscode/
-.idea/
-
-# =========================
-# Build / Output
-# =========================
-dist/
-build/
-out/
-
-# =========================
-# Temporary / Backup
-# =========================
-*.tmp
-*.bak
-*.swp
+# Allow important root files (optional but recommended)
+!README.md
+!docker-compose.yml
+!requirements.txt
+!.gitignore
