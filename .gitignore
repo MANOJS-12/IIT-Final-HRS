@@ -24,3 +24,9 @@
 !docker-compose.yml
 !requirements.txt
 !.gitignore
+
+# Ignore Neo4j runtime and database files
+data/neo4j/
+neo4j/data/
+**/neo4j/transactions/
+**/neostore.transaction.db*
