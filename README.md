@@ -87,6 +87,9 @@ This design balances **expert knowledge** and **learned intelligence**, ensuring
 
 ## Results
 
+![input](https://github.com/user-attachments/assets/f1d52a0a-a158-479a-b902-3dd9326c7ea3)
+
+
 For a given user assessment:
 
 1. **Rule-Based Inference**
