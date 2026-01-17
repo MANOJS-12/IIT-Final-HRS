@@ -8,6 +8,7 @@ The system employs a **Hybrid Recommender Architecture** by integrating:
 
 This hybrid design ensures **trust, transparency, and adaptability**, which are essential for sensitive mental health applications.
 
+[Overall Project Link](https://drive.google.com/drive/folders/1-TNLHTCTesctzfKGOWbpnyokQa4IhXzp?usp=sharing)
 
 ## Problem Statement
 
@@ -114,7 +115,7 @@ For a given user assessment:
 - **Python 3.10+** (Backend & ML)
 - **Node.js 16+** (Frontend)
 
-##Setup Instructions
+## Setup Instructions
 
 ### 1. Start the Database
 The system uses Neo4j to store the Knowledge Graph.
@@ -145,9 +146,7 @@ npm install
 cd ..
 ```
 
----
-
-##Running the Application
+## Running the Application
 
 ### 1. Start Support API (Backend)
 Run the FastAPI server which handles recommendation logic.
@@ -166,11 +165,12 @@ npm run dev
 
 ---
 
-##Quick Test
+## Quick Test
 You can test the recommendation engine directly via the CLI:
 ```bash
 python debug_recommender.py
 ```
+
 
 
 
