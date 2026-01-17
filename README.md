@@ -2,7 +2,7 @@
 
 A Full-Stack AI-powered application that recommends mental health activities based on user profiles and real-time assessments. It utilizes a **Hybrid Recommender System** combining **Knowledge Graph Rules** (Neo4j) and **Graph Embeddings** (Deep Learning).
 
-#[Overall Project Link](url)
+[Overall Project Link](url)
 
 ## 🚀 Prerequisites
 
@@ -69,5 +69,6 @@ You can test the recommendation engine directly via the CLI:
 ```bash
 python debug_recommender.py
 ```
+
 
 
