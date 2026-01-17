@@ -86,8 +86,13 @@ This design balances **expert knowledge** and **learned intelligence**, ensuring
 
 
 ## Results
+### User Attributes
 
 ![input](https://github.com/user-attachments/assets/f1d52a0a-a158-479a-b902-3dd9326c7ea3)
+
+### Recommendation Output
+
+![output](https://github.com/user-attachments/assets/9ad92787-418e-4a3c-bb1b-e14bd453e819)
 
 
 For a given user assessment:
