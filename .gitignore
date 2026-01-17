@@ -24,3 +24,8 @@
 !docker-compose.yml
 !requirements.txt
 !.gitignore
+
+# Ignore datasets and loose files
+*.csv
+*.txt
+*.log
