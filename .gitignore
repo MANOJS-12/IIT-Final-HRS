@@ -25,8 +25,9 @@
 !requirements.txt
 !.gitignore
 
-# Ignore Neo4j runtime and database files
+# Neo4j runtime data (NEVER COMMIT)
 data/neo4j/
 neo4j/data/
 **/neo4j/transactions/
 **/neostore.transaction.db*
+
