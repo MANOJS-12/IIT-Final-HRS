@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 id,name,type,target_emotion_id
 A001,Deep Breathing,Meditation,E001
 A002,Yoga Flow,Exercise,E002
@@ -7,3 +8,14 @@ A005,Gratitude List,Writing,E004
 A006,Boxing,Exercise,E005
 A007,Call a Friend,Social,E006
 A008,Progressive Muscle Relaxation,Meditation,E001
+=======
+id,name,type,target_emotion_id
+A001,Deep Breathing,Meditation,E001
+A002,Yoga Flow,Exercise,E002
+A003,Journaling,Writing,E003
+A004,Nature Walk,Exercise,E002
+A005,Gratitude List,Writing,E004
+A006,Boxing,Exercise,E005
+A007,Call a Friend,Social,E006
+A008,Progressive Muscle Relaxation,Meditation,E001
+>>>>>>> 007909633b0dbd35d894a70cd8159a473e3c621e

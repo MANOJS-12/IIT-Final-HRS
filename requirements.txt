@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 fastapi
 uvicorn
 neo4j
@@ -7,3 +8,14 @@ scikit-learn
 python-dotenv
 scipy
 networkx
+=======
+fastapi
+uvicorn
+neo4j
+pandas
+numpy
+scikit-learn
+python-dotenv
+scipy
+networkx
+>>>>>>> 007909633b0dbd35d894a70cd8159a473e3c621e

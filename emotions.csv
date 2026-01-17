@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 id,name
 E001,Anxiety
 E002,Stress
@@ -5,3 +6,12 @@ E003,Sadness
 E004,Joy
 E005,Anger
 E006,Loneliness
+=======
+id,name
+E001,Anxiety
+E002,Stress
+E003,Sadness
+E004,Joy
+E005,Anger
+E006,Loneliness
+>>>>>>> 007909633b0dbd35d894a70cd8159a473e3c621e

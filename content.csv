@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 id,title,type,category,related_emotion_id
 C001,Understanding Anxiety,Article,Educational,E001
 C002,5 Minute Stress Relief,Video,Guided,E002
@@ -7,3 +8,14 @@ C005,Managing Anger Constructively,Article,Educational,E005
 C006,Community Connection,Video,Social,E006
 C007,Calming Music Mix,Audio,Relaxation,E001
 C008,Work-Life Balance Tips,Article,Productivity,E002
+=======
+id,title,type,category,related_emotion_id
+C001,Understanding Anxiety,Article,Educational,E001
+C002,5 Minute Stress Relief,Video,Guided,E002
+C003,Coping with Loss,Article,Support,E003
+C004,The Science of Happiness,Podcast,Educational,E004
+C005,Managing Anger Constructively,Article,Educational,E005
+C006,Community Connection,Video,Social,E006
+C007,Calming Music Mix,Audio,Relaxation,E001
+C008,Work-Life Balance Tips,Article,Productivity,E002
+>>>>>>> 007909633b0dbd35d894a70cd8159a473e3c621e
